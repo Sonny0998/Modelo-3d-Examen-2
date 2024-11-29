@@ -114,7 +114,7 @@
 
         // Cargar fondo HDR
         const rgbeLoader = new RGBELoader();
-        rgbeLoader.load('./RGBE/sunset_jhbcentral_4k.hdr', function (texture) {
+        rgbeLoader.load('Modelo-3D-Examen-2/RGBE/sunset_jhbcentral_4k.hdr', function (texture) {
           texture.mapping = THREE.EquirectangularReflectionMapping;
           scene.background = texture;
           scene.environment = texture;
@@ -126,7 +126,7 @@
 
         const sound = new Audio(listener);
         const audioLoader = new AudioLoader();
-        audioLoader.load('./RGBE/Dance Monkey.mp3', function (buffer) {
+        audioLoader.load('Modelo-3D-Examen-2/RGBE/Dance Monkey.mp3', function (buffer) {
           console.log("Audio cargado exitosamente");
           sound.setBuffer(buffer);
           sound.setLoop(true);
@@ -158,7 +158,7 @@
       }
 
       function loadAsset(asset) {
-        loader.load('./FBX/Hip Hop Dancing.fbx', function (group) {
+        loader.load('Modelo-3D-Examen-2/FBX/Hip Hop Dancing.fbx', function (group) {
           if (object) {
             object.traverse(function (child) {
               if (child.material) {
