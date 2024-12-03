@@ -59,7 +59,7 @@
 
 				// Load HDR Environment Map
 				const rgbeLoader = new RGBELoader();
-				rgbeLoader.load('Modelo-3D-Examen-2/rgbe/christmas_photo_studio_04_4k.hdr', function (texture) {
+				rgbeLoader.load('Modelo-3D-Examen-2/RGBE/christmas_photo_studio_04_4k.hdr', function (texture) {
 					texture.mapping = THREE.EquirectangularReflectionMapping;
 					scene.background = texture; // Configura el HDR como fondo
 					scene.environment = texture; // Usa el HDR como mapa de entorno
@@ -139,7 +139,7 @@
 			}
 
 			function loadAsset(asset) {
-				loader.load('Modelo-3D-Examen-2/fbx/Hip Hop Dancing.fbx', function (group) {
+				loader.load('Modelo-3D-Examen-2/FBX/Hip Hop Dancing.fbx', function (group) {
 					if (object) {
 						object.traverse(function (child) {
 							if (child.material) {
